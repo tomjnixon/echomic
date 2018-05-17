@@ -1,0 +1,4 @@
+[submodule "micro/lib/msp430_usi_i2c"]
+	path = micro/lib/msp430_usi_i2c
+	url = git@github.com:tomjnixon/msp430_usi_i2c.git
+	branch = gcc_fixes

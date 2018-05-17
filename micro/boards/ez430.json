@@ -1,0 +1,41 @@
+{
+  "build": {
+    "core": "msp430",
+    "extra_flags": "-DENERGIA_ARCH_MSP430 -DENERGIA_MSP_EXP430F2012",
+    "f_cpu": "16000000L",
+    "hwids": [
+      [
+        "0x2341",
+        "0x0c9f"
+      ]
+    ],
+    "mcu": "msp430f2012",
+    "variant": "MSP-EXP430F2012"
+  },
+  "debug": {
+    "tools": {
+      "mspdebug": {
+        "onboard": true,
+        "server": {
+          "arguments": [
+            "$UPLOAD_PROTOCOL",
+            "gdb"
+          ],
+          "executable": "mspdebug",
+          "package": "tool-mspdebug"
+        }
+      }
+    }
+  },
+  "frameworks": [
+    "energia"
+  ],
+  "name": "TI EZ430",
+  "upload": {
+    "maximum_ram_size": 128,
+    "maximum_size": 2048,
+    "protocol": "uif"
+  },
+  "url": "http://www.ti.com/ww/en/launchpad/launchpads-msp430-msp-exp430f5529lp.html",
+  "vendor": "TI"
+}
